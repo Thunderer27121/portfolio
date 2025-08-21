@@ -55,7 +55,7 @@ const App = () => {
   return (
     <div style={{ scrollbarWidth:"none",msOverflowStyle: "none" }} className=" w-full overflow-auto">
       <div
-        className="h-4 w-4 rounded-full bg-red-600 border z-200 border-white fixed pointer-events-none transition-all duration-150 ease-out"
+        className="h-4 w-4 rounded-full bg-black border z-200 border-white fixed pointer-events-none transition-all duration-150 ease-out"
         ref={cursor}
       ></div>
 
