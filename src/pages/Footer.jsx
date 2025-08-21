@@ -17,10 +17,10 @@ const Footer = () => {
           <p className="text-sm">Email: <a href="mailto:anujsingh27121@gmail.com" className="text-cyan-400 hover:underline">anujsingh27121@gmail.com</a></p>
           <p className="text-sm">Phone : 8130967975</p>
           <div className="flex gap-4 mt-3 justify-center md:justify-start">
-            <a href="https://github.com/yourgithub" target="_blank" rel="noreferrer" className="hover:text-white text-xl">
+            <a href="https://github.com/Thunderer27121" target="_blank" rel="noreferrer" className="hover:text-white text-xl">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noreferrer" className="hover:text-white text-xl">
+            <a href="https://www.linkedin.com/in/inderjeet-singh-34263b336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" rel="noreferrer" className="hover:text-white text-xl">
               <FaLinkedin />
             </a>
             <a href="mailto:anujsingh27121@gmail.com" className="hover:text-white text-xl">
