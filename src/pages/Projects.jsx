@@ -30,12 +30,25 @@ const projects = [
     live: "https://threejs-earth-one.vercel.app/",
     github: "https://github.com/Thunderer27121/threejs_earth",
   },
+  {
+    title: "Excalidraw clone app (React, tailwind)",
+    description:
+      "A clone of excalidraw that has its some tools.",
+    live: "https://excalidraw-clone-v7mh.vercel.app/",
+    github: "https://github.com/Thunderer27121/excalidraw-clone",
+  },
+  {
+    title: "Moody player",
+    description:
+      "A simple app that tells your mood by look at your webcam video",
+    live: "https://moodyplayer-seven.vercel.app/",
+    github: "https://github.com/Thunderer27121/moodyplayer",
+  },
 ];
 
 export default function ProjectsPage() {
   return (
     <section id="projects" className="w-full bg-[#0a0a0a] text-white px-6 md:px-12 py-20 mt-10">
-      {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +59,6 @@ export default function ProjectsPage() {
         My Projects
       </motion.h2>
 
-      {/* Projects Grid */}
       <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <motion.div
@@ -56,14 +68,12 @@ export default function ProjectsPage() {
             transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            {/* Card */}
             <div className="bg-[#111] rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full border border-gray-800">
               <div>
                 <h3 className="text-2xl font-semibold mb-3 text-cyan-400">{project.title}</h3>
                 <p className="text-gray-400 mb-8 leading-relaxed">{project.description}</p>
               </div>
 
-              {/* Buttons */}
               <div className="flex gap-4 mt-auto">
                 <a
                   href={project.live}
