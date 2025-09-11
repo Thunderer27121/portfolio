@@ -44,6 +44,12 @@ const projects = [
     live: "https://moodyplayer-seven.vercel.app/",
     github: "https://github.com/Thunderer27121/moodyplayer",
   },
+  {
+    title : "Next js Todo app",
+    description : "A Todo app created with next js",
+    live : "https://nextjs-todo-app-two-snowy.vercel.app/",
+    github : "https://github.com/Thunderer27121/nextjs-todo-app"
+  }
 ];
 
 export default function ProjectsPage() {
