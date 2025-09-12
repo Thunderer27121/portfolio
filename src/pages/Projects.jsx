@@ -34,7 +34,7 @@ const projects = [
     title: "Excalidraw clone app (React, tailwind)",
     description:
       "A clone of excalidraw that has its some tools.",
-    live: "https://excalidraw-clone-v7mh.vercel.app/",
+    live: "https://excalidraw-clone-lilac.vercel.app/",
     github: "https://github.com/Thunderer27121/excalidraw-clone",
   },
   {
