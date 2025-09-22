@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
-import profile from "../assets/profile.jpg";
 import { Typewriter } from "react-simple-typewriter";
 import { useNavigate } from "react-router-dom";
-import resume from "../assets/resume.pdf"
 import { SiReact, SiJavascript, SiTailwindcss, SiGithub } from "react-icons/si";
 import Footer from "./Footer";
 
@@ -10,7 +8,7 @@ export default function Home() {
   const navigate = useNavigate();
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = resume;
+    link.href = "/Inderjeet_resume.pdf";
     link.download = "Inderjeet_singh_resume";
     link.style.display = "none";
     document.body.appendChild(link);
@@ -50,7 +48,7 @@ export default function Home() {
           whileHover={{ rotate: 5 }}
         >
           <img
-            src={profile}
+            src={"/profile.jpg"}
             alt="Profile"
             className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover mt-10 border-4 border-white shadow-xl transition duration-300 hover:scale-105"
           />
