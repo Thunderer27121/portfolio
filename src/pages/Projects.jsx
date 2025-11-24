@@ -6,7 +6,7 @@ const projects = [
     title: "CRUD App (PHP + MySQL)",
     description:
       "A CRUD application with user & admin login, email verification, and MySQL database.",
-    live: "https://the-php-crud-app.onrender.com",
+    live: "https://php-crud-sflf.onrender.com",
     github: "https://github.com/Thunderer27121/The-PHP-crud-app",
   },
   {
