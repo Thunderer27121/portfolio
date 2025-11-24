@@ -7,7 +7,7 @@ const projects = [
     description:
       "A CRUD application with user & admin login, email verification, and MySQL database.",
     live: "https://php-crud-sflf.onrender.com",
-    github: "https://github.com/Thunderer27121/The-PHP-crud-app",
+    github: "https://github.com/Thunderer27121/Php_crud",
   },
   {
     title: "Pizza Ordering Website (React)",
