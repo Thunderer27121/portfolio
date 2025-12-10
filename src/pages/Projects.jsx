@@ -16,7 +16,6 @@ const projects = [
     live: "https://pizzawebapp-z1td.vercel.app/",
     github: "https://github.com/Thunderer27121/pizzawebapp",
   },
-  
   {
     title: "Excalidraw clone app (React, tailwind)",
     description:
@@ -28,7 +27,7 @@ const projects = [
   title: "StreamX (MERN, Tailwind, Cloudinary)",
   description:
     "A full-featured video platform where users can upload, like, dislike, subscribe, and manage channels — built with MERN stack and optimized UI using Tailwind.",
-  live: "https://stream-x-mu.vercel.app/"
+  live: "https://stream-x-mu.vercel.app/",
   github: "https://github.com/Thunderer27121/StreamX",
 },
 {
