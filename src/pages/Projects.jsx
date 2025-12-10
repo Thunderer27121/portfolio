@@ -12,44 +12,33 @@ const projects = [
   {
     title: "Pizza Ordering Website (React)",
     description:
-      "A pizza website with category-based menu, cart system, and Tailwind styling.",
+      "A pizza website with category-based menu, cart system, payment gateway and Tailwind styling.",
     live: "https://pizzawebapp-z1td.vercel.app/",
     github: "https://github.com/Thunderer27121/pizzawebapp",
   },
-  {
-    title: "Sticky Notes App (HTML, CSS, JS)",
-    description:
-      "A simple sticky notes app built with vanilla JavaScript for creating and deleting notes.",
-    live: "https://todo-app-orcin-eta-85.vercel.app/",
-    github: "https://github.com/Thunderer27121/todo-app",
-  },
-  {
-    title: "3D Earth Model (Three.js)",
-    description:
-      "A 3D Earth model built using Three.js with realistic texture and rotation animation.",
-    live: "https://threejs-earth-one.vercel.app/",
-    github: "https://github.com/Thunderer27121/threejs_earth",
-  },
+  
   {
     title: "Excalidraw clone app (React, tailwind)",
     description:
-      "A clone of excalidraw that has its some tools.",
+      "A clone of excalidraw that has some of helping tools like pencil, eraser, shape and line tool.",
     live: "https://excalidraw-clone-lilac.vercel.app/",
     github: "https://github.com/Thunderer27121/excalidraw-clone",
   },
   {
-    title: "Moody player",
-    description:
-      "A simple app that tells your mood by look at your webcam video",
-    live: "https://moodyplayer-seven.vercel.app/",
-    github: "https://github.com/Thunderer27121/moodyplayer",
-  },
-  {
-    title : "Next js Todo app",
-    description : "A Todo app created with next js",
-    live : "https://nextjs-todo-app-two-snowy.vercel.app/",
-    github : "https://github.com/Thunderer27121/nextjs-todo-app"
-  }
+  title: "StreamX (MERN, Tailwind, Cloudinary)",
+  description:
+    "A full-featured video platform where users can upload, like, dislike, subscribe, and manage channels — built with MERN stack and optimized UI using Tailwind.",
+  live: "https://stream-x-mu.vercel.app/"
+  github: "https://github.com/Thunderer27121/StreamX",
+},
+{
+  title: "Real-time Chat App (React, InstantDB)",
+  description:
+    "A modern real-time chat application built with React and InstantDB, featuring instant message syncing, room-based chats, and a clean, responsive UI.",
+  live: "https://share.google/IsfeeBBk0Ym5Iz9DW",
+  github: "https://github.com/Thunderer27121/Chatapp",
+}
+
 ];
 
 export default function ProjectsPage() {
