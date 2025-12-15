@@ -13,21 +13,21 @@ const projects = [
     title: "Pizza Ordering Website (React)",
     description:
       "A pizza website with category-based menu, cart system , payment gateway and Tailwind styling.",
-    live: "https://pizzawebapp-z1td.vercel.app/",
-    github: "https://github.com/Thunderer27121/pizzawebapp",
+    live: "https://pizza-website-q62liob2a-thunderer27121s-projects.vercel.app",
+    github: "https://github.com/Thunderer27121/pizza_website",
   },
   {
     title: "Excalidraw clone app (React, tailwind)",
     description:
       "A clone of excalidraw that has some of helping tools like pencil, eraser, shape and line tool.",
-    live: "https://excalidraw-clone-lilac.vercel.app/",
+    live: "https://excalidraw-clone-lilac.vercel.app",
     github: "https://github.com/Thunderer27121/excalidraw-clone",
   },
   {
   title: "StreamX (MERN, Tailwind, Cloudinary)",
   description:
     "A full-featured video platform where users can upload, like, dislike, subscribe, and manage channels — built with MERN stack and optimized UI using Tailwind.",
-  live: "https://stream-x-mu.vercel.app/",
+  live: "https://stream-x-mu.vercel.app",
   github: "https://github.com/Thunderer27121/StreamX",
 },
 {
