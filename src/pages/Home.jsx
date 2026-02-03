@@ -41,20 +41,19 @@ export default function Home() {
       <div className="absolute w-[100px] h-[100px] bg-white/10 backdrop-blur-sm rounded-full bottom-80 right-16 animate-bounce z-0" />
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen mt-50 text-white">
-        <motion.div
+        <motion.img
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: "spring", duration: 1.5, delay: 0.6, bounceStiffness: 100, bounceDamping: 5, ease: "easeInOut" }}
+          transition={{ type: "tween", duration: 1,   ease: "easeInOut" }}
+          alt="Profile"
           whileHover={{ rotate: 5 }}
+          className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover mt-10 border-4 border-white shadow-xl transition duration-300 hover:scale-105"
+          decoding="auto"
+          loading="lazy"
+          src={"/profile.webp"}
         >
-          <img
-            src={"/profile.webp"}
-            loading="lazy"
-            decoding="async"
-            alt="Profile"
-            className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover mt-10 border-4 border-white shadow-xl transition duration-300 hover:scale-105"
-          />
-        </motion.div>
+          </motion.img>
+  
 
         <motion.h1
           className="text-4xl md:text-6xl mb-3 font-montserrat"
