@@ -44,11 +44,13 @@ export default function Home() {
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: "spring", duration: 1.5, delay: 0.3, bounceStiffness: 100, bounceDamping: 5, ease: "easeInOut" }}
+          transition={{ type: "spring", duration: 1.5, delay: 0.6, bounceStiffness: 100, bounceDamping: 5, ease: "easeInOut" }}
           whileHover={{ rotate: 5 }}
         >
           <img
-            src={"/profile.jpg"}
+            src={"/profile.webp"}
+            loading="lazy"
+            decoding="async"
             alt="Profile"
             className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover mt-10 border-4 border-white shadow-xl transition duration-300 hover:scale-105"
           />
