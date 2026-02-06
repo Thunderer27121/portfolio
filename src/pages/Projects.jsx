@@ -13,7 +13,7 @@ const projects = [
     title: "Pizza Ordering Website (React)",
     description:
       "A pizza website with category-based menu, cart system , payment gateway and Tailwind styling.",
-    live: "https://pizza-website-q62liob2a-thunderer27121s-projects.vercel.app",
+    live: "https://pizza-website-sigma-two.vercel.app",
     github: "https://github.com/Thunderer27121/pizza_website",
   },
   {
