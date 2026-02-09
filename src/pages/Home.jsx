@@ -49,7 +49,7 @@ export default function Home() {
           whileHover={{ rotate: 5 }}
           className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover mt-10 border-4 border-white shadow-xl transition duration-300 hover:scale-105"
           decoding="auto"
-          loading="lazy"
+          fetchpriority="high"
           src={"/profile.webp"}
         >
           </motion.img>
