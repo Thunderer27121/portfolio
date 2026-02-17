@@ -49,6 +49,7 @@ const App = () => {
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("touchmove", handleMouseMove);
       clearTimeout(timeoutId.current);
     };
   }, []);
