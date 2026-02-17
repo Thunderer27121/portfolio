@@ -45,6 +45,7 @@ const App = () => {
     };
 
     document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListner("touchmove", handleMouseMove);
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
