@@ -19,47 +19,55 @@ const App = () => {
   
 
   useEffect(() => {
-    // Hide initially
-    if (cursor.current) {
+  if (cursor.current) {
+    cursor.current.style.visibility = "hidden";
+  }
+
+  const handlePointerMove = (e) => {
+    if (!cursor.current) return;
+
+    const x = e.clientX;
+    const y = e.clientY;
+
+    cursor.current.style.top = y + "px";
+    cursor.current.style.left = x + "px";
+    cursor.current.style.visibility = "visible";
+
+    clearTimeout(timeoutId.current);
+    timeoutId.current = setTimeout(() => {
       cursor.current.style.visibility = "hidden";
-    }
+    }, 2000);
+  };
 
-    const handleMouseMove = (e) => {
-      const x = e.clientX;
-      const y = e.clientY;
+  const handlePointerDown = () => {
+    if (!cursor.current) return;
+    cursor.current.style.transform = "translate(-50%, -50%) scale(3)";
+  };
 
-      if (cursor.current) {
-        // Show and move the cursor
-        cursor.current.style.top = y + "px";
-        cursor.current.style.left = x + "px";
-        cursor.current.style.visibility = "visible";
-      }
+  const handlePointerUp = () => {
+    if (!cursor.current) return;
+    cursor.current.style.transform = "translate(-50%, -50%) scale(1)";
+  };
 
-      // Reset hide timer
-      clearTimeout(timeoutId.current);
-      timeoutId.current = setTimeout(() => {
-        if (cursor.current) {
-          cursor.current.style.visibility = "hidden";
-        }
-      }, 2000);
-    };
+  document.addEventListener("pointermove", handlePointerMove);
+  document.addEventListener("pointerdown", handlePointerDown);
+  document.addEventListener("pointerup", handlePointerUp);
 
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListner("touchmove", handleMouseMove);
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("touchmove", handleMouseMove);
-      clearTimeout(timeoutId.current);
-    };
-  }, []);
+  return () => {
+    document.removeEventListener("pointermove", handlePointerMove);
+    document.removeEventListener("pointerdown", handlePointerDown);
+    document.removeEventListener("pointerup", handlePointerUp);
+    clearTimeout(timeoutId.current);
+  };
+}, []);
 
   return (
     <div style={{ scrollbarWidth:"none",msOverflowStyle: "none" }} className=" w-full overflow-auto">
       <div
-        className="h-4 w-4 rounded-full bg-black border z-200 border-white fixed pointer-events-none transition-all duration-150 ease-out"
-        ref={cursor}
-      ></div>
+  className="h-4 w-4 rounded-full bg-black border z-200 border-white fixed pointer-events-none transition-all duration-150 ease-out"
+  style={{ transform: "translate(-50%, -50%) scale(1)" }}
+  ref={cursor}
+/>
 
       <Navbar />
       <Router />
